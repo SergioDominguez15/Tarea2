@@ -24,7 +24,7 @@ namespace Tarea2
 
                 do
                 {
-                    //Menu de opciones
+                    //Opciones a elegir
                     Console.WriteLine("0 - Salir");
                     Console.WriteLine("1 - Crear empleado");
                     Console.WriteLine("2 - Actualizar salario");
@@ -35,16 +35,16 @@ namespace Tarea2
                     Console.WriteLine("7 – Borrar empleado");
                     Console.Write("Introduzca su opción: ");
 
-                    //Indica la opcion a elegir con la variable opcion
+                    //Lee la opcion introducida y la guarda en la variable opcion
                     opcion = int.Parse(Console.ReadLine());
 
                     switch (opcion)
                     {
-                        //Salir de la aplicacion
+                        //Sale de la aplicacion
                         case 0:
                             Console.WriteLine("Ha salido de la aplicacion");
                             break;
-                        //Añadir un nuevo usuario.
+                        //Añade un nuevo usuario.
                         case 1:
                             Console.WriteLine("Ha elegido crear empleados");
                             Console.Write("Introduzca el nombre: ");
@@ -66,7 +66,7 @@ namespace Tarea2
                             Thread.Sleep(2000);
                             Console.Clear();
                             break;
-                        //Modificar salario de una persona
+                        //Modifica el salario de un empleado
                         case 2:
                             Console.Write("Introduzca el nif de la persona a modificar: ");
                             string nif = Console.ReadLine();
@@ -78,7 +78,7 @@ namespace Tarea2
                             Thread.Sleep(2000);
                             Console.Clear();
                             break;
-                        //Mostrar nombre de empleado
+                        //Muestra el nombre del empleado
                         case 3:
                             Console.Write("Introduzca el nif de la persona a mostrar: ");
                             nif = Console.ReadLine();
@@ -86,7 +86,7 @@ namespace Tarea2
                             Thread.Sleep(2000);
                             Console.Clear();
                             break;
-                        //Mostrar edad del empleado
+                        //Mostrar la edad del empleado
                         case 4:
                             Console.Write("Introduzca el nif de la persona a mostrar: ");
                             nif = Console.ReadLine();
@@ -94,7 +94,7 @@ namespace Tarea2
                             Thread.Sleep(2000);
                             Console.Clear();
                             break;
-                        //Mostrar datos del empleado
+                        //Muestra los datos del empleado
                         case 5:
                             Console.Write("Introduzca el nif de la persona a mostrar: ");
                             nif = Console.ReadLine();
@@ -103,14 +103,14 @@ namespace Tarea2
                             Thread.Sleep(2000);
                             Console.Clear();
                             break;
-                        //Mostrar datos de todos los empleados
+                        //Muestra los datos de todos los empleados
                         case 6:
                             Console.WriteLine("Muestra todos los empleados: ");
                             Empleado.MostrarEmpleados();
                             Thread.Sleep(4000);
                             Console.Clear();
                             break;
-                        //Borrar a un empleado
+                        //Borra un empleado
                         case 7:
                             Console.Write("Introduzca el nif del empleado a borrar: ");
                             nif = Console.ReadLine();
@@ -118,7 +118,7 @@ namespace Tarea2
                             Thread.Sleep(2000);
                             Console.Clear();
                             break;
-                        //Si introduce un numero incorrecto le llevara a default
+                        //Si introduce un valor incorrecto le llevara a default
                         default:
                             Console.WriteLine("Introduzca un numero valido");
                             break;
